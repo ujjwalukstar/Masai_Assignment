@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>L1 - Debugging a Form Structure</title>
+</head>
+<body>
+    <form action="/submit">
+        <!-- Changes made are:
+        1. I have wrapped all the inputs inside the div because label,input are inline elements which comes in the same line as we have to show username,password and button in new line so i added them inside div.
+        2."username is corrected to "username"  
+        -->
+        <div>
+        <label Name="username">Enter Username:</label>
+        <input type="text" id="username" name="username">
+        </div>
+
+        <div>
+        <label for="passcode">Password:</label>
+        <input typ="password" id="passcode" name="password">
+        </div>
+
+        <div>
+        <button Submit>Submit Form</buttn>
+        </div>
+      </form>
+      
+      
+</body>
+</html>
