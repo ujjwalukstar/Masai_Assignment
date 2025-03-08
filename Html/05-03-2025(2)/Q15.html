@@ -3,15 +3,118 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header{
+            background: linear-gradient(to bottom,#212bf3, #00aaff,#4aece1);
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+            font-weight: bold;
+        }
+    
+        nav {
+            text-align: center;
+            padding: 10px;
+            background: white;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: black;
+            font-size: 18px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+        }
+        h2 {
+            font-size: 22px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 10px;
+        }
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #002060;
+            color: white;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input, textarea {
+            display: flex;
+            width: 10%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid black;
+        }
+        button {
+            background: #002060;
+            color: white;
+            padding: 10px 15px;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
 </head>
 <body>
-    <header>
-
-    </header>
-    <nav>
-
+    <header>My Portfolio</header>
+    <nav class="head1">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Projects</a>
+        <a href="#">Contact</a>
     </nav>
-    
+    <div class="container">
+        <h2>Welcome to My Portfolio</h2>
+        <p>This portfolio showcases my projects and provides information about my background and contact details.</p>
+        
+        <h2>About</h2>
+        <p>Hello! I'm a web developer passionate about building dynamic and responsive websites. I enjoy creating user-friendly interfaces and working on challenging projects.</p>
+        
+        <h2>Projects</h2>
+        <table>
+            <tr>
+                <th>Project Name</th>
+                <th>Description</th>
+                <th>Year</th>
+            </tr>
+            <tr>
+                <td>Project Alpha</td>
+                <td>A web-based tool for tracking project progress and managing tasks.</td>
+                <td>2023</td>
+            </tr>
+            <tr>
+                <td>Portfolio Site</td>
+                <td>A personal website showcasing my work and skills as a web developer.</td>
+                <td>2024</td>
+            </tr>
+        </table>
+        
+        <h2>Contact</h2>
+        <form>
+            <label>Name:</label>
+            <input type="text" required>
+            <label>Email:</label>
+            <input type="email" required>
+            <label>Message:</label>
+            <textarea rows="3" required></textarea>
+            <button type="submit">Submit</button>
+        </form>
+    </div>
 </body>
 </html>
