@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Styling Text with Class Selectors</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Styling Text with Class Selectors</title>
+  <style>
+    p {
+      font-size: 16px;
+    }
+
+    .highlight {
+      background-color: yellow;
+      font-weight: bold;
+    }
+    .note {
+      font-style: italic;
+      color: darkgreen;
+    }
+  </style>
 </head>
 <body>
-    <!-- ul>li{items $}*5 -->
-     <!-- <marquee>Welcome to this page!</marquee> -->
-     <marquee direction="right" scrollamount="20">Welcome to this page!</marquee>
-      <progress value="60" max="100"></progress>
-
+  <p class="highlight">This paragraph has a yellow background and bold text.</p>
+  <p class="note">This paragraph has italic text and dark green color.</p>
+  <p>This paragraph has a default style.</p>
 </body>
 </html>

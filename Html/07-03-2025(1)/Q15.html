@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+            color: #333;
+        }
+
+        .header {
+            background-color: #FF7F50;
+            color: #fff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        .header h1 {
+            margin: 0;
+            font-size: 2em;
+            color: #191970;
+        }
+
+        .header nav ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .header nav li {
+            color: white;
+            display: inline;
+            margin: 0 10px;
+        }
+
+        .header nav a {
+            color: #191970;
+            text-decoration: none;
+        }
+
+        .container {
+            width: 80%;
+            margin: 20px auto;
+            padding: 20px;
+        }
+
+        .about-me {
+            margin-bottom: 20px;
+        }
+
+        .about-me h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .about-me p {
+            line-height: 1.6;
+        }
+
+        .about-me img {
+            max-width: 100px;
+            height: auto;
+            border: 1px solid #ccc;
+        }
+
+        .projects {
+            margin-bottom: 20px;
+        }
+
+        .project {
+            border: 1px solid #eee;
+            padding: 15px;
+            margin-bottom: 10px;
+        }
+
+        .project h3 {
+            font-size: 1.2em;
+            margin-bottom: 5px;
+        }
+
+        .project p {
+            margin-bottom: 10px;
+        }
+
+        .project a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .project ul {
+            list-style: disc;
+            margin-left: 20px;
+        }
+
+        .contact-me {
+            margin-bottom: 20px;
+        }
+
+        .contact-me h2 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .contact-me form {
+            display: flex;
+            flex-direction: column;
+            max-width: 150px;
+        }
+
+        .contact-me label {
+            margin-top: 10px;
+        }
+
+        .contact-me input,
+        .contact-me textarea {
+            padding: 8px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .contact-me button {
+            padding: 10px 15px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .footer {
+            background-color: #FF7F50;
+            color: #fff;
+            text-align: center;
+            padding: 10px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        .social-links a {
+            color: blue;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="header">
+        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <section class="about-me">
+            <h2>About Me</h2>
+            <p>Hello! I'm a web developer with a passion for creating functional and beautiful web applications.</p>
+            <p>A picture of me</p>
+            <img src="placeholder-image.png" alt="Placeholder Image">
+        </section>
+
+        <section class="projects">
+            <h2>Projects</h2>
+
+            <div class="project">
+                <h3>Project One: Personal Blog</h3>
+                <p>Screenshot of my personal blog project.</p>
+                <p>A personal blog where I write about web development, programming, and technology.</p>
+                <a href="#">View Project</a>
+                <p>Technologies Used:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+
+            <div class="project">
+                <h3>Project Two: E-commerce Site</h3>
+                <p>Screenshot of my e-commerce project.</p>
+                <p>An e-commerce website built to simulate a real-world online shopping experience.</p>
+                <a href="#">View Project</a>
+                <p>Technologies Used:</p>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>JavaScript</li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-me">
+            <h2>Contact Me</h2>
+            <form>
+                <label for="full-name">Full Name:</label>
+                <input type="text" id="full-name" name="full-name">
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email">
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4"></textarea>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+    </div>
+
+    <footer class="footer">
+        © 2024 My Portfolio
+        <div class="social-links">
+            Follow me on:
+            <a href="#" target="_blank">Twitter</a> |
+            <a href="#" target="_blank">Github</a>
+        </div>
+    </footer>
+
+</body>
+</html>

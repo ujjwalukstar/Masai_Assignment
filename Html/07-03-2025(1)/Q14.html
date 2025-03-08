@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Multi-Method CSS Example</title>
+  <style>
+    h1 {
+      color: navy;
+      font-size: 28px;
+      background-color: #f0f0f0;
+    }
+    .highlighted-text {
+      background-color: yellow;
+      color: red;
+    }
+  </style>
+  <link rel="stylesheet" href="14style.css">
+</head>
+<body>
+
+  <h1>Main Title</h1>
+  <p style="font-size: 16px; color: #333;">This paragraph has inline styles applied.</p>
+  <p class="highlighted-text">This paragraph uses a class-based style.</p>
+  <div id="main-container">
+    <p>This div should have styles from the external stylesheet.</p>
+  </div>
+
+</body>
+</html>
+<!-- 
+Explanation of Corrections
+Internal Styles: The background color for h1 was corrected from #f0f0 to #f0f0f0, which is a valid hex code for a light gray color.
+
+Inline Styles: The color value in the inline style for the paragraph was corrected from #3333 to #333, which is a valid hex code for a dark gray color.
+
+External Stylesheet: No corrections were needed in the external stylesheet (styles.css).
+-->
