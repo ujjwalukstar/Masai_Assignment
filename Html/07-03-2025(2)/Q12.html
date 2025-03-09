@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Element selector (specificity: 0,0,1) */
+    div {
+      color: blue;
+    }
+
+    /* Class selector (specificity: 0,1,0) */
+    .highlight {
+      color: red;
+    }
+
+    /* ID selector (specificity: 1,0,0) */
+    #special {
+      color: green;
+    }
+  </style>
+</head>
+<body>
+  <div class="highlight" id="special">
+    This text will be styled
+  </div>
+</body>
+</html>

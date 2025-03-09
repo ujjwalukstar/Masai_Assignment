@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    /* Descendant combinator - styles all <p> elements inside div */
+    div p {
+      color: blue;
+    }
+
+    /* Child combinator - styles only direct <p> children of div */
+    div > p {
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <p>Direct child paragraph</p>
+    <section>
+      <p>Nested paragraph</p>
+    </section>
+  </div>
+</body>
+</html>
